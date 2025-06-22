@@ -1,7 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Home, User, Linkedin, Mail, Phone } from "lucide-react";
-import { Substack } from "lucide-react";
+import { Home, User, Linkedin, Mail, Phone, BookOpen } from "lucide-react";
 
 const Navigation = () => {
   const handleLinkedInClick = () => {
@@ -48,7 +47,7 @@ const Navigation = () => {
               onClick={handleSubstackClick}
               className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
             >
-              <Substack className="w-5 h-5 text-gray-700" />
+              <BookOpen className="w-5 h-5 text-gray-700" />
             </button>
           </div>
 
