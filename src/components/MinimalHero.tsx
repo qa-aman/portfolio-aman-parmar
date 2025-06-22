@@ -1,17 +1,43 @@
 
+import { useState } from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { Camera } from "lucide-react";
 
 const MinimalHero = () => {
+  const [profileImage, setProfileImage] = useState("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face");
+
+  const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setProfileImage(e.target?.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   return (
     <section className="pt-32 pb-20 px-6">
       <div className="max-w-2xl mx-auto text-center">
-        {/* Profile Photo */}
-        <div className="mb-8 flex justify-center">
-          <Avatar className="w-24 h-24">
-            <AvatarImage src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Aman Parmar" />
-            <AvatarFallback className="text-xl font-bold bg-gray-200 text-gray-700">AP</AvatarFallback>
-          </Avatar>
+        {/* Profile Photo with Upload Option */}
+        <div className="mb-8 flex justify-center relative">
+          <div className="relative group">
+            <Avatar className="w-24 h-24">
+              <AvatarImage src={profileImage} alt="Aman Parmar" />
+              <AvatarFallback className="text-xl font-bold bg-gray-200 text-gray-700">AP</AvatarFallback>
+            </Avatar>
+            <label className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full cursor-pointer">
+              <Camera className="w-6 h-6 text-white" />
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageUpload}
+                className="hidden"
+              />
+            </label>
+          </div>
         </div>
 
         {/* Main Heading */}

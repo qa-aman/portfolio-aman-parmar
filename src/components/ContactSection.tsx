@@ -1,7 +1,16 @@
 
 import { Button } from "@/components/ui/button";
+import { Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
+  const handleEmailClick = () => {
+    window.open('mailto:amanparmar208@gmail.com', '_self');
+  };
+
+  const handlePhoneClick = () => {
+    window.open('tel:+918511755657', '_self');
+  };
+
   return (
     <section className="py-20 px-6">
       <div className="max-w-2xl mx-auto">
@@ -14,12 +23,21 @@ const ContactSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 items-start">
-          <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium">
+          <Button 
+            onClick={handleEmailClick}
+            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium flex items-center gap-2"
+          >
+            <Mail className="w-4 h-4" />
             Send Message
           </Button>
           <span className="text-gray-500 py-3">or</span>
-          <Button variant="outline" className="border-gray-300 hover:bg-gray-50 px-8 py-3 rounded-full font-medium">
-            Book a call
+          <Button 
+            onClick={handlePhoneClick}
+            variant="outline" 
+            className="border-gray-300 hover:bg-gray-50 px-8 py-3 rounded-full font-medium flex items-center gap-2"
+          >
+            <Phone className="w-4 h-4" />
+            Call Now
           </Button>
         </div>
       </div>
