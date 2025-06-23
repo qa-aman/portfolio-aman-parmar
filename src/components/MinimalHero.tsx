@@ -8,7 +8,7 @@ const MinimalHero = () => {
   const [profileImage, setProfileImage] = useState("/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png");
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target?.files?.[0];
+    const file = event.target.files?.[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
@@ -40,25 +40,25 @@ const MinimalHero = () => {
           </div>
         </div>
 
-        {/* Main Heading - Bold Tagline */}
+        {/* Main Heading */}
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
-          Senior PM | EdTech Optimist | Building what actually works.
+          Hey, I'm Aman.
+          <br />
+          Product Manager & Educator.
         </h1>
 
-        {/* Description - Smaller Text */}
+        {/* Description */}
+        <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+          Most product managers can't code. Most developers can't strategize. I do both.
+        </p>
         <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-          I turn complex educational challenges into intuitive, scalable products.
-          <br />
-          Built for 2M+ learners across 4 countries.
+          5+ years turning educational ideas into scalable products.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium"
-            onClick={() => window.open('https://wa.me/918511755657', '_blank')}
-          >
-            Let's Build Together
+          <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium">
+            Hire me
           </Button>
           <div className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
