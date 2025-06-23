@@ -8,7 +8,7 @@ const MinimalHero = () => {
   const [profileImage, setProfileImage] = useState("/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png");
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
+    const file = event.target?.files?.[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
@@ -40,16 +40,16 @@ const MinimalHero = () => {
           </div>
         </div>
 
-        {/* Main Heading */}
+        {/* Main Heading - Bold Tagline */}
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
-          I turn complex educational challenges into intuitive, scalable products.
-          <br />
-          Built for 2M+ learners across 15 countries.
+          Senior PM | EdTech Optimist | Building what actually works.
         </h1>
 
-        {/* Description */}
+        {/* Description - Smaller Text */}
         <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-          Senior PM | EdTech Optimist | Building what actually works.
+          I turn complex educational challenges into intuitive, scalable products.
+          <br />
+          Built for 2M+ learners across 4 countries.
         </p>
 
         {/* CTA Buttons */}
