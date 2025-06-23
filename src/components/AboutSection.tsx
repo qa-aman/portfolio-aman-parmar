@@ -7,27 +7,19 @@ const AboutSection = () => {
         
         <div className="space-y-6 text-gray-600 leading-relaxed">
           <p>
-            I'm Aman. Senior Product Manager at Educational Initiatives, based in Ahmedabad.
+            As a Senior Product Manager at Educational Initiatives, I bring over three years of experience in leading the end-to-end lifecycle of impactful EdTech products, including CRM transformations and adaptive learning platforms.
           </p>
           
           <p>
-            <strong className="text-black">Here's what I actually do:</strong> I take complex educational challenges and transform them into intuitive product solutions. 
-            Not just "user-friendly" interfaces - products that actually drive learning outcomes while scaling to millions of users.
+            My expertise lies in defining product strategy, conducting user research, and delivering scalable, offline-resilient solutions that address real-world challenges in education. Recent projects include spearheading the CRM redesign and driving architectural enhancements for the Mira learning application to ensure a seamless, user-focused experience across diverse geographies.
           </p>
           
           <p>
-            Most product managers can't code. Most developers can't understand pedagogy. I do both. While 
-            others debate features, I'm shipping data-driven solutions that improve educational experiences. 
-            International market expansion isn't optional, it's essential.
+            Guided by a mission to enable personalized learning at scale, I collaborate closely with cross-functional teams to localize solutions for international markets, optimize workflows, and align product development with organizational goals.
           </p>
           
           <p>
-            I've built products used by 2M+ students across 15 countries because I actually 
-            understand what works. My experience with Mindspark, Mira, and Navigator proves it.
-          </p>
-          
-          <p>
-            The result? Products that don't just engage learners - they accelerate their progress.
+            With a data-informed and documentation-driven approach, I focus on long-term scalability and user satisfaction while exploring advancements in AI-powered learning and analytics to shape the future of global EdTech innovation.
           </p>
           
           <p className="text-orange-600 underline cursor-pointer hover:text-orange-700">
