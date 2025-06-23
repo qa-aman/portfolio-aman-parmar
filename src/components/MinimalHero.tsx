@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Camera } from "lucide-react";
 
 const MinimalHero = () => {
-  const [profileImage, setProfileImage] = useState("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face");
+  const [profileImage, setProfileImage] = useState("/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png");
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];

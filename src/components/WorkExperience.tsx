@@ -3,32 +3,46 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
-    period: "Jan 2019 - Present",
+    period: "Jul 2024 - Present",
     role: "Senior Product Manager",
     company: "Educational Initiatives",
     companyColor: "bg-blue-100 text-blue-700",
     description: "Leading product strategy and development for educational technology solutions"
   },
   {
-    period: "Jun 2017 - Dec 2018", 
+    period: "Apr 2022 - Jun 2024", 
     role: "Product Manager",
     company: "Educational Initiatives",
     companyColor: "bg-green-100 text-green-700",
-    description: "Managed product lifecycle and cross-functional teams"
+    description: "Managed full product lifecycle and cross-functional teams"
   },
   {
-    period: "Aug 2015 - May 2017",
-    role: "Associate Product Manager", 
+    period: "Jan 2021 - Mar 2022",
+    role: "Associate Quality Assurance Manager", 
     company: "Educational Initiatives",
     companyColor: "bg-purple-100 text-purple-700",
-    description: "Supported product development and market research initiatives"
+    description: "Led QA initiatives and ensured product quality across teams"
   },
   {
-    period: "Jan 2014 - Jul 2015",
-    role: "Business Analyst",
+    period: "Apr 2018 - Dec 2020",
+    role: "Lead Quality Assurance Engineer",
     company: "Educational Initiatives", 
     companyColor: "bg-orange-100 text-orange-700",
-    description: "Analyzed business requirements and supported product decisions"
+    description: "Supervised QA engineering efforts and led quality frameworks"
+  },
+  {
+    period: "Apr 2016 - Mar 2018",
+    role: "Senior Software Test Engineer",
+    company: "Educational Initiatives", 
+    companyColor: "bg-red-100 text-red-700",
+    description: "Designed and executed comprehensive testing strategies"
+  },
+  {
+    period: "Dec 2014 - Mar 2016",
+    role: "Software Engineer in Test",
+    company: "Educational Initiatives", 
+    companyColor: "bg-indigo-100 text-indigo-700",
+    description: "Built automation frameworks and performed test engineering"
   }
 ];
 
