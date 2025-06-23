@@ -49,10 +49,10 @@ const MinimalHero = () => {
 
         {/* Description */}
         <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-          Most product managers can't code. Most developers can't strategize. I do both.
+          I turn complex educational challenges into intuitive, scalable products.
         </p>
         <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-          5+ years turning educational ideas into scalable products.
+          Built for 2M+ learners across 4 countries.
         </p>
 
         {/* CTA Buttons */}
