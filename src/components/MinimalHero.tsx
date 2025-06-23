@@ -42,23 +42,23 @@ const MinimalHero = () => {
 
         {/* Main Heading */}
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
-          Hey, I'm Aman.
+          I turn complex educational challenges into intuitive, scalable products.
           <br />
-          Product Manager & Educator.
+          Built for 2M+ learners across 15 countries.
         </h1>
 
         {/* Description */}
-        <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-          Most product managers can't code. Most developers can't strategize. I do both.
-        </p>
         <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-          5+ years turning educational ideas into scalable products.
+          Senior PM | EdTech Optimist | Building what actually works.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium">
-            Hire me
+          <Button 
+            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium"
+            onClick={() => window.open('https://wa.me/918511755657', '_blank')}
+          >
+            Let's Build Together
           </Button>
           <div className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
