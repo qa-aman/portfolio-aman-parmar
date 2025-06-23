@@ -1,10 +1,14 @@
 
-import { Button } from "@/components/ui/button";
-import { Phone, Mail } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const ContactSection = () => {
   const handleEmailClick = () => {
     window.open('mailto:amanparmar208@gmail.com', '_self');
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/918511755657', '_blank');
   };
 
   const handlePhoneClick = () => {
@@ -22,24 +26,51 @@ const ContactSection = () => {
           solve real educational challenges. Hit me up if you're serious about results.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 items-start">
-          <Button 
-            onClick={handleEmailClick}
-            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium flex items-center gap-2"
-          >
-            <Mail className="w-4 h-4" />
-            Send Message
-          </Button>
-          <span className="text-gray-500 py-3">or</span>
-          <Button 
-            onClick={handlePhoneClick}
-            variant="outline" 
-            className="border-gray-300 hover:bg-gray-50 px-8 py-3 rounded-full font-medium flex items-center gap-2"
-          >
-            <Phone className="w-4 h-4" />
-            Call Now
-          </Button>
-        </div>
+        <TooltipProvider>
+          <div className="flex gap-6 items-center">
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button 
+                  onClick={handleEmailClick}
+                  className="p-4 bg-black hover:bg-gray-800 text-white rounded-full transition-colors"
+                >
+                  <Mail className="w-6 h-6" />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>amanparmar208@gmail.com</p>
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button 
+                  onClick={handleWhatsAppClick}
+                  className="p-4 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>8511755657</p>
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button 
+                  onClick={handlePhoneClick}
+                  className="p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors"
+                >
+                  <Phone className="w-6 h-6" />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>8511755657</p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
+        </TooltipProvider>
       </div>
     </section>
   );

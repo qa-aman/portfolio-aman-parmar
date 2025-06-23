@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -18,8 +17,12 @@ const MinimalHero = () => {
     }
   };
 
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/918511755657', '_blank');
+  };
+
   return (
-    <section className="pt-32 pb-20 px-6">
+    <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-2xl mx-auto text-center">
         {/* Profile Photo with Upload Option */}
         <div className="mb-8 flex justify-center relative">
@@ -57,8 +60,11 @@ const MinimalHero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium">
-            Hire me
+          <Button 
+            onClick={handleWhatsAppClick}
+            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium"
+          >
+            Let's Build Together
           </Button>
           <div className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
