@@ -22,15 +22,6 @@ const AboutSection = () => {
             With a data-informed and documentation-driven approach, I focus on long-term scalability and user satisfaction while exploring advancements in AI-powered learning and analytics to shape the future of global EdTech innovation.
           </p>
           
-          <p className="text-orange-600 underline cursor-pointer hover:text-orange-700">
-            I also write about product management, EdTech, and everything in between.
-          </p>
-          
-          <p>
-            When I'm not building products, I'm mentoring other PMs or exploring new educational technologies. 
-            Strong coffee, always.
-          </p>
-          
           <p className="font-medium text-black">
             I don't just build products. I build products that work.
           </p>
