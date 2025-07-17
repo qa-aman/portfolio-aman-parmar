@@ -4,15 +4,15 @@ import { Home, Linkedin, Github, BookOpen } from "lucide-react";
 
 const Navigation = () => {
   const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/aman-parmar3/', '_blank');
+    window.open('https://www.linkedin.com/in/aman-parmar3/', '_blank', 'noopener,noreferrer');
   };
 
   const handleGithubClick = () => {
-    window.open('https://github.com/qa-aman', '_blank');
+    window.open('https://github.com/qa-aman', '_blank', 'noopener,noreferrer');
   };
 
   const handleSubstackClick = () => {
-    window.open('https://amanparmar3.substack.com/', '_blank');
+    window.open('https://amanparmar3.substack.com/', '_blank', 'noopener,noreferrer');
   };
 
   const handleHomeClick = () => {

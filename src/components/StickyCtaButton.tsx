@@ -20,7 +20,7 @@ const StickyCtaButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.open('https://linkedin.com/in/amanparmar', '_blank');
+    window.open('https://linkedin.com/in/amanparmar', '_blank', 'noopener,noreferrer');
   };
 
   return (

@@ -8,7 +8,7 @@ const ContactSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918511755657', '_blank');
+    window.open('https://wa.me/918511755657', '_blank', 'noopener,noreferrer');
   };
 
   const handlePhoneClick = () => {
