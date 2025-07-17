@@ -9,18 +9,11 @@ const experiences = [
     description: "Leading strategic EdTech transformations with a focus on scalable architecture, offline usability, personalization, and AI-integrated learning solutions."
   },
   {
-    period: "Apr 2022 - Jun 2024", 
+    period: "Jan 2021 - June 2024", 
     role: "Product Manager",
     company: "Educational Initiatives",
     companyColor: "bg-green-100 text-green-700",
     description: "Delivered user-centric platform enhancements, drove localization for global rollouts, and improved learning outcomes through field-driven product iterations."
-  },
-  {
-    period: "Jan 2021 - June 2024",
-    role: "Associate Quality Assurance Manager", 
-    company: "Educational Initiatives",
-    companyColor: "bg-green-100 text-green-700",
-    description: "Oversaw quality for cross-platform learning tools, ensuring reliability at scale through automation, mobile testing, and performance benchmarking."
   },
   {
     period: "Apr 2018 - Dec 2020",
