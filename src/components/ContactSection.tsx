@@ -23,7 +23,7 @@ const ContactSection = () => {
         <p className="text-lg text-gray-600 mb-12 leading-relaxed">
           Building something that needs to convert? Need a product manager who 
           actually ships products that make impact? I'm open to discussing projects that 
-          solve real educational challenges. Hit me up if you're serious about results.
+          solve real challenges. Hit me up if you're serious about results.
         </p>
         
         <TooltipProvider>

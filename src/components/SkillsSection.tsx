@@ -8,11 +8,11 @@ const skillCategories = [
   },
   {
     category: "Technical Skills", 
-    skills: ["Data Analysis", "SQL", "API Integration", "A/B Testing", "Technical Documentation", "Wireframing"]
+    skills: ["Data Analysis", "SQL", "API Integration", "A/B Testing", "Wireframing", "Vibe Coding"]
   },
   {
     category: "Education Technology",
-    skills: ["Learning Management Systems", "Educational Content", "Assessment Tools", "Student Analytics", "Curriculum Design"]
+    skills: ["Learning Management Systems", "Educational Content", "Assessment Tools", "Student Analytics"]
   },
   {
     category: "Leadership & Communication",

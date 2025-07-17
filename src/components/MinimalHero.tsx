@@ -1,21 +1,23 @@
-import { useState } from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Camera } from "lucide-react";
+// import { Camera } from "lucide-react";
 
 const MinimalHero = () => {
-  const [profileImage, setProfileImage] = useState("/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png");
+  // Commented out image upload functionality - can be restored if needed
+  // const [profileImage, setProfileImage] = useState("/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png");
 
-  const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        setProfileImage(e.target?.result as string);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
+  // const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const file = event.target.files?.[0];
+  //   if (file) {
+  //     const reader = new FileReader();
+  //     reader.onload = (e) => {
+  //       setProfileImage(e.target?.result as string);
+  //     };
+  //     reader.readAsDataURL(file);
+  //   }
+  // };
+
+  const profileImage = "/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png";
 
   const handleEmailClick = () => {
     window.open('mailto:amanparmar208@gmail.com?subject=Let\'s Build Together', '_blank');
@@ -24,23 +26,22 @@ const MinimalHero = () => {
   return (
     <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-2xl mx-auto text-center">
-        {/* Profile Photo with Upload Option */}
-        <div className="mb-8 flex justify-center relative">
-          <div className="relative group">
-            <Avatar className="w-48 h-48">
-              <AvatarImage src={profileImage} alt="Aman Parmar" />
-              <AvatarFallback className="text-xl font-bold bg-gray-200 text-gray-700">AP</AvatarFallback>
-            </Avatar>
-            <label className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full cursor-pointer">
-              <Camera className="w-6 h-6 text-white" />
-              <input
-                type="file"
-                accept="image/*"
-                onChange={handleImageUpload}
-                className="hidden"
-              />
-            </label>
-          </div>
+        {/* Profile Photo - Upload functionality commented out */}
+        <div className="mb-8 flex justify-center">
+          <Avatar className="w-48 h-48">
+            <AvatarImage src={profileImage} alt="Aman Parmar" />
+            <AvatarFallback className="text-xl font-bold bg-gray-200 text-gray-700">AP</AvatarFallback>
+          </Avatar>
+          {/* Commented out upload functionality - can be restored if needed */}
+          {/* <label className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full cursor-pointer">
+            <Camera className="w-6 h-6 text-white" />
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="hidden"
+            />
+          </label> */}
         </div>
 
         {/* Main Heading */}
