@@ -47,12 +47,12 @@ const MinimalHero = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
           Hey, I'm Aman.
           <br />
-          Product Manager & Educator.
+          Product Manager & Learner.
         </h1>
 
         {/* Description */}
         <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-          I turn complex educational challenges into intuitive, scalable products.
+          I turn complex challenges into intuitive, scalable products.
         </p>
         <p className="text-lg text-gray-600 mb-12 leading-relaxed">
           Built for 2M+ learners across 4 countries.

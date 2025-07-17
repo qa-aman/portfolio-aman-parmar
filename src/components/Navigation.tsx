@@ -1,10 +1,14 @@
 
 import { Button } from "@/components/ui/button";
-import { Home, Linkedin, BookOpen } from "lucide-react";
+import { Home, Linkedin, Github, BookOpen } from "lucide-react";
 
 const Navigation = () => {
   const handleLinkedInClick = () => {
     window.open('https://www.linkedin.com/in/aman-parmar3/', '_blank');
+  };
+
+  const handleGithubClick = () => {
+    window.open('https://github.com/qa-aman', '_blank');
   };
 
   const handleSubstackClick = () => {
@@ -35,6 +39,12 @@ const Navigation = () => {
               className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
             >
               <Linkedin className="w-5 h-5 text-gray-700" />
+            </button>
+            <button 
+              onClick={handleGithubClick}
+              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <Github className="w-5 h-5 text-gray-700" />
             </button>
             <button 
               onClick={handleSubstackClick}
