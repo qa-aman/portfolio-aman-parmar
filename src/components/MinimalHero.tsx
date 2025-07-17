@@ -18,13 +18,10 @@ const MinimalHero = () => {
   // };
 
   const profileImage = "/lovable-uploads/c8d71ce5-35dc-4466-ba5d-2473997ef45f.png";
-
   const handleEmailClick = () => {
     window.open('mailto:amanparmar208@gmail.com?subject=Let\'s Build Together', '_blank');
   };
-
-  return (
-    <section id="hero" className="pt-32 pb-20 px-6">
+  return <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-2xl mx-auto text-center">
         {/* Profile Photo - Upload functionality commented out */}
         <div className="mb-8 flex justify-center">
@@ -41,7 +38,7 @@ const MinimalHero = () => {
               onChange={handleImageUpload}
               className="hidden"
             />
-          </label> */}
+           </label> */}
         </div>
 
         {/* Main Heading */}
@@ -55,16 +52,11 @@ const MinimalHero = () => {
         <p className="text-lg text-gray-600 mb-4 leading-relaxed">
           I turn complex challenges into intuitive, scalable products.
         </p>
-        <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-          Built for 2M+ learners across 4 countries.
-        </p>
+        <p className="text-lg text-gray-600 mb-12 leading-relaxed">Built for 2M+ learners across 3 countries.</p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            onClick={handleEmailClick}
-            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium"
-          >
+          <Button onClick={handleEmailClick} className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium">
             Let's Build Together
           </Button>
           <div className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm">
@@ -73,8 +65,6 @@ const MinimalHero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MinimalHero;
