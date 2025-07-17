@@ -27,7 +27,7 @@ const MinimalHero = () => {
         {/* Profile Photo with Upload Option */}
         <div className="mb-8 flex justify-center relative">
           <div className="relative group">
-            <Avatar className="w-24 h-24">
+            <Avatar className="w-48 h-48">
               <AvatarImage src={profileImage} alt="Aman Parmar" />
               <AvatarFallback className="text-xl font-bold bg-gray-200 text-gray-700">AP</AvatarFallback>
             </Avatar>
