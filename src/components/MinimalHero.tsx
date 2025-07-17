@@ -17,8 +17,8 @@ const MinimalHero = () => {
     }
   };
 
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918511755657', '_blank');
+  const handleEmailClick = () => {
+    window.open('mailto:amanparmar208@gmail.com?subject=Let\'s Build Together', '_blank');
   };
 
   return (
@@ -61,7 +61,7 @@ const MinimalHero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
-            onClick={handleWhatsAppClick}
+            onClick={handleEmailClick}
             className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium"
           >
             Let's Build Together
