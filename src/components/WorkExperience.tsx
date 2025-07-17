@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 
 const experiences = [
@@ -17,7 +16,7 @@ const experiences = [
     description: "Delivered user-centric platform enhancements, drove localization for global rollouts, and improved learning outcomes through field-driven product iterations."
   },
   {
-    period: "Jan 2021 - Mar 2022",
+    period: "Jan 2021 - June 2024",
     role: "Associate Quality Assurance Manager", 
     company: "Educational Initiatives",
     companyColor: "bg-green-100 text-green-700",
