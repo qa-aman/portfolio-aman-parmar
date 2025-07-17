@@ -7,7 +7,7 @@ const AboutSection = () => {
         
         <div className="space-y-6 text-gray-600 leading-relaxed">
           <p>
-            With over 10 years of experience building scalable, AI-powered EdTech products, I specialize in crafting impactful learning solutions that work across diverse geographies, languages, and constraints. My expertise lies at the intersection of <span className="font-semibold text-black">product strategy, localization, AI integration, and cross-functional execution</span>.
+            With over <span className="font-semibold text-black">10 years of experience</span> building scalable, AI-powered EdTech products, I specialize in crafting impactful learning solutions that work across diverse geographies, languages, and constraints. My expertise lies at the intersection of <span className="font-semibold text-black">product strategy, localization, AI integration, and cross-functional execution</span>.
           </p>
           
           <p>
@@ -15,7 +15,7 @@ const AboutSection = () => {
           </p>
           
           <p>
-            I've successfully driven multi-language localization efforts, delivering contextualized content across <span className="font-semibold text-black">9 Indian languages and 3 global regions</span>, ensuring accessibility without compromising user experience or backend performance.
+            I've successfully driven <span className="font-semibold text-black">multi-language localization</span> efforts, delivering contextualized content across <span className="font-semibold text-black">9 Indian languages and 3 global regions</span>, ensuring accessibility without compromising user experience or backend performance.
           </p>
           
           <p>
@@ -23,7 +23,7 @@ const AboutSection = () => {
           </p>
           
           <p>
-            I've also led LMS integrations via API for global education foundations, balancing product flexibility with the requirements of scale, privacy, and interoperability.
+            I've also led <span className="font-semibold text-black">LMS integrations via API</span> for global education foundations, orchestrating seamless data flow while balancing product flexibility with enterprise-grade requirements of scale, privacy, and interoperability.
           </p>
           
           <p>
